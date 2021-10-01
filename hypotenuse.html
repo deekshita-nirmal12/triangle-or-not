@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!--Import materialize.css-->
+ <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav>
-        <a href="./index.html">Calculate triangles</a>
-        <a href="./form.html">Triangle Quiz</a>
-        <a href="./hypotenuse.html">Hypotenuse</a>
-        <a href="./calculate-area-of-triangle.html">Calculate Area</a>
-    </nav>
+        <div class="nav-wrapper">
+          <a href="/index.html" class="brand-logo">Fun with Triangles</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a  href="/index.html">Calculate Triangles</a></li>
+            <li><a href="/form.html">Triangle Quiz</a></li>
+            <li><a class="active" href="/hypotenuse.html">Calculate Hypotenuse</a></li>
+            <li><a  href="/calculate-area-of-triangle.html">Calculate Area</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
     <h1>Calculate Hypotenuse</h1>
     <label>a =</label>
     <input type="number" class="side">
@@ -23,5 +36,6 @@
     <div id="output-box"></div>
 
     <script src="./hypotenuse.js"></script>
+      </div>
 </body>
 </html>
