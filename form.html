@@ -5,76 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle quiz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Import Google Icon Font-->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <!--Import materialize.css-->
- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="/index.html" class="brand-logo">Fun with Triangles</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a  href="/index.html">Calculate Triangles</a></li>
-            <li><a class="active" href="/form.html">Triangle Quiz</a></li>
-            <li><a href="/hypotenuse.html">Calculate Hypotenuse</a></li>
-            <li><a  href="/calculate-area-of-triangle.html">Calculate Area</a>
+    <nav class="navigation container">
+        <div class="nav-brand">FUN WITH TRIANGES</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="./index.html">Calculate Triangle</a>
             </li>
-
-          </ul>
-        </div>
-      </nav>
-      <div class="container">
+            <li class="list-item-inline">
+                <a class="link link-active" href="./form.html">Play Quiz</a>
+    
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./hypotenuse.html">Calculate Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./calculate-area-of-triangle.html">Calculate Area</a>
+            </li>
+    
+        </ul>
+    </nav>
+    
     <h1>Triangle quiz</h1>
-    <form class="quiz">
-        <div class="question-container">
-            <p>Question1: What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
-            <label><input type="radio" name="question1" value="45°">45°</label>
-            <label><input type="radio" name="question1" value="90°">90°</label>
-            <label><input type="radio" name="question1" value=" 60°"> 60°</label>
-        </div>
-        <div class="question-container">
-            <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-            <label><input type="radio" name="question2" value="obtuse">obtuse</label>
-            <label><input type="radio" name="question2" value="acute"> acute</label>
-            <label><input type="radio" name="question2" value="right angled">right angled</label>
-        </div>
-    </form>
+    <form class="quiz-form">
+      <div class="question-container">
+          <p>What is the third angle for the triangle where angle = 45 and angle2 = "45?</p>
 
-    <!-- <form action="#">
-        <p>Question1: What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?
           <label>
-            <input name="group1 question1" type="radio" checked />
-            <span>45</span>
-            <span>90</span>
-            <span>60</span>
+              <input type="radio" name="question1" value="45"/>45
+          </label>
+          <label>
+            <input type="radio" name="question1" value="60"/>60
+        </label>
+        <label>
+            <input type="radio" name="question1" value="90"/>90
+        </label>
+       </div>
 
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="group1" type="radio" />
-            <span>Yellow</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="with-gap" name="group1" type="radio"  />
-            <span>Green</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input name="group1" type="radio" disabled="disabled" />
-            <span>Brown</span>
-          </label>
-        </p>
-      </form>
-    <button id="submit-answer-btn">Submit Answer</button>
-    <div id="output"></div>
+       <div class="question-container">
+           <p>
+               if a triangle has an angle of 90 degrees, what is it called?
+           </p>
+           <label>
+               <input type="radio" name="question2" value ="acute" /><span>acute</span>
+           </label>
+           <label>
+            <input type="radio" name="question2" value ="obtuse" />
+            <span>obtuse</span>
+            
+        </label>
+        <label>
+            <input type="radio" name="question2" value ="right angled" /> <span>right angled</span>
+        </label>
+       </div>
+
+       </form>
+      <button id="submit-answer-btn">Submit </button>
+
+    <h3 id="output"></h3> 
+
     <script src="./form.js"></script>
+
+
 </div>
 </body>
-</html> -->
+</html>

@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark 12 | fun with triangles</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Import Google Icon Font-->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <!--Import materialize.css-->
- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title> fun with triangles</title>
+    
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Fun with Triangles</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a  href="/index.html">Calculate Triangles</a></li>
-            <li><a href="/form.html">Triangle Quiz</a></li>
-            <li><a class="active" href="/hypotenuse.html">Calculate Hypotenuse</a></li>
-            <li><a  href="/calculate-area-of-triangle.html">Calculate Area</a>
-            </li>
+  
+  <nav class="navigation container">
+    <div class="nav-brand">FUN WITH TRIANGES</div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+            <a class="link link-active" href="./index.html">Calculate Triangle</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="./form.html">Play Quiz</a>
 
-          </ul>
-        </div>
-      </nav>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="./hypotenuse.html">Calculate Hypotenuse</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="./calculate-area-of-triangle.html">Calculate Area</a>
+        </li>
+
+    </ul>
+</nav>
       <div class="container">
+<div class="section">
         <h1>Fun with triangles</h1>
-        <label for="angle1">angle1:</label>
-        <input type="number" class="angle-input" >
+        <label class="label-angle" for="angle1">angle1:</label>
+        <input class="input" type="number" class="angle-input" >
+        
         <label for="angle2">angle2:</label>
         <input type="number" class="angle-input">
+        
         <label for="angle3">angle3:</label>
         <input type="number" class="angle-input">
+        
         <button id="check-btn">Check !</button>
     <div id="output-box"></div>
     <script src="./app.js"></script>
+</div>
     </div>
 </body>
 </html>
